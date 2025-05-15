@@ -1,4 +1,7 @@
 #!/bin/bash
+$a=$1
+$b=$2
+$o=$3
 read a b o
 if (o ="+")
   r=a+b
