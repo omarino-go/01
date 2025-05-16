@@ -7,7 +7,10 @@ case $o in
   -)
     resultat=$((a-b))
     ;;
-  \* || x)
+  \*)
+    resultat=$((a*b))
+    ;;
+  x)
     resultat=$((a*b))
     ;;
   /)
