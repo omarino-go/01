@@ -1,8 +1,10 @@
 #!/bin/bash
-#recuperer l'argument
-read -a arg
+#recuperer l'argument et initialisé le compteur à 1
+read -a tableau
 i=1
-for args in "${arg[@]}"; do
+# parcourir le tableau
+for args in "${tabeau[@]}"; do
     echo "Argument $i: $args"
+    #incrementation
     i=$((i+1))
 done
