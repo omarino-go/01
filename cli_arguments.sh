@@ -4,5 +4,5 @@ read -a arg
 i=1
 for args in "${arg[@]}";then
     echo "argument $i : $args"
-    ((i++))
+    i=$((i+1))
 done
