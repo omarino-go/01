@@ -3,6 +3,6 @@
 read -a arg
 i=1
 for args in "${arg[@]}"; do
-    echo "argument $i: $args"
+    echo "Argument $i: $args"
     i=$((i+1))
 done
