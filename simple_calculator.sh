@@ -1,12 +1,17 @@
 #!/bin/bash
 read a b o
-if (o ="+")
-  r=a+b
-elif (o = "-")
-  r=a-b
-elif (o = "x" || o= "*")
-  r=a*b
-else 
-  r=a/b
-fi
-echo "Resultat :$r"
+case $o in
+  +)
+    resultat=$((a+b))
+    ;;
+  -)
+    resultat=$((a-b))
+  \* || x)
+    resultat=$((a*b))
+  /)
+    resultat=$((a/b))
+  *)
+    echo "L'operateur n'existe pas"
+    exit 1
+esac
+echo "Résultat : $resultat"
